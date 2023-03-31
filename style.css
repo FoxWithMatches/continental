@@ -12,6 +12,7 @@ body {
     width: 100%;
     max-width: 1520px;
     font-size: 1rem;
+    line-height: 1.75em;
     padding: 0 1.25rem;
     margin: 0 auto;
 }
@@ -90,9 +91,53 @@ body {
 }
 
 .about-text {
-    line-height: 1.75rem;
     padding-bottom: 3rem;
     width: 37.8rem;
 }
 
 /* Hotels */
+
+.hotels-content {
+    display: flex;
+}
+
+.image-hotels {
+    width: 100%;
+    max-width: 740px;
+    height: 650px;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    background-color: #ABC5DC;
+    width: 100%;
+    max-width: 740px;
+    height: 650px;
+    /* padding: 0 7.8rem 0 7.8rem; */
+    align-items: center;
+}
+
+.line {
+    content: "";
+    background-color: #fff;
+    width: 6.5rem;
+    height: .12rem;
+    margin: 7.8rem 0 7.8rem 7.8rem;
+}
+
+.opacity {
+    background-color: rgba(192, 215, 235, 0.9);
+    margin: 6rem 7.8rem 4.4rem -7.8rem;
+    height: 400px;
+}
+
+.pd {
+    padding-left: 7.8rem;
+    padding-right: 7.8rem;
+}
+
+.text {
+    width: 30rem;
+    font-style: italic;
+}
