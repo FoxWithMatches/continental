@@ -97,11 +97,11 @@ body {
 
 /* Hotels */
 
-.hotels-content {
+.flex-content {
     display: flex;
 }
 
-.image-hotels {
+.image {
     width: 100%;
     max-width: 740px;
     height: 650px;
@@ -139,5 +139,20 @@ body {
 
 .text {
     width: 30rem;
-    font-style: italic;
+}
+
+/* Sea and air cargo */
+
+.text-white {
+    color: #F2F3F4;
+}
+
+.green {
+    background-color: #43837E;
+}
+
+.opacity-green {
+    background-color: rgba(112, 178, 173, 0.8);
+    margin: 6rem -7.8rem 4.4rem 7.8rem;
+    z-index: 1;
 }
