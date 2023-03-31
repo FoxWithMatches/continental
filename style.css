@@ -42,6 +42,7 @@ body {
 .button {
     color: #fff;
     font-style: italic;
+    font-size: 1rem;
     background-color: #C70048;
     padding: .75em 4.6em;
     border-radius: .25rem;
@@ -175,4 +176,11 @@ body {
 
 .line--red {
     background-color: #C70048;
+    margin: 3.1rem 0 4.3rem 7.8rem;
+}
+
+/* Footer */
+
+.footer {
+    margin: 8.8rem 0 6.25rem 0;
 }
