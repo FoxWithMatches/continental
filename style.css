@@ -1,0 +1,51 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #51595D;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1520px;
+    font-size: 1rem;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    position: static;
+}
+
+.nav-link {
+    padding-right: 1.9rem;
+    font-style: italic;
+    color: #003E64;
+}
+
+.nav-link:hover {
+    color: #C70048;
+    cursor: pointer;
+}
+
+.button {
+    color: #fff;
+    font-style: italic;
+    background-color: #C70048;
+    padding: .75em 4.6em;
+    border-radius: .25rem;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
