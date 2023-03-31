@@ -6,6 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #51595D;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
     font-size: 1rem;
     line-height: 1.75em;
     padding: 0 5.25rem 0 5.25rem;
-    margin: 0 auto;
+
 }
 
 /* Header */
@@ -50,6 +51,7 @@ body {
     padding: .75em 4.6em;
     border-radius: .25rem;
     border: none;
+    margin-right: 2.25rem;
 }
 
 .button:hover {
@@ -98,8 +100,10 @@ body {
 
 .about-text {
     padding-bottom: 3rem;
+    display: block;
     width: 100%;
     max-width: 37.8rem;
+    padding-right: 3rem;
 }
 
 /* Hotels */
@@ -254,6 +258,11 @@ body {
         padding-left: 1.7rem;
     }
 
+
+    .about-flex {
+        gap: 1rem;
+    }
+
     .about-text {
         width: 27rem;
     }
@@ -273,6 +282,10 @@ body {
         display: none;
     }
 
+    .button {
+        margin-right: 2.5rem;
+    }
+
     .title {
         display: none;
     }
@@ -288,6 +301,7 @@ body {
 
     .about-text {
         width: 100%;
+        padding-right: 2.25rem;
         padding-bottom: 1rem;
     }
 
@@ -376,6 +390,7 @@ body {
 
     .logo {
         width: 11.7rem;
+        padding-left: 2.25rem;
     }
 
     .button {
@@ -417,4 +432,20 @@ body {
         padding-left: 2.25rem;
     }
 
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .logo {
+        width: 9rem;
+        height: 2rem;
+        padding-left: 1rem;
+    }
+
+    .button {
+        margin-right: 1rem;
+    }
 }
