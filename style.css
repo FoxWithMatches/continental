@@ -114,7 +114,6 @@ body {
     width: 100%;
     max-width: 740px;
     height: 650px;
-    /* padding: 0 7.8rem 0 7.8rem; */
     align-items: center;
 }
 
@@ -147,12 +146,33 @@ body {
     color: #F2F3F4;
 }
 
-.green {
+.rectangle--green {
     background-color: #43837E;
 }
 
-.opacity-green {
+.opacity--green {
     background-color: rgba(112, 178, 173, 0.8);
     margin: 6rem -7.8rem 4.4rem 7.8rem;
     z-index: 1;
+}
+
+/* Air Cargo */
+
+.rectangle--beige {
+    background-color: #F4E8E4;
+    align-items: flex-start;
+}
+
+.opacity--beige {
+    background-color: rgba(253, 245, 242, 0.9);
+    margin: 6rem 7.8rem 4.4rem -7.8rem;
+    height: 45rem;
+}
+
+.pb {
+    padding-bottom: 2rem;
+}
+
+.line--red {
+    background-color: #C70048;
 }
