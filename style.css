@@ -205,7 +205,7 @@ body {
 }
 
 .modal {
-    display: none;
+    /* display: none; */
     width: 100%;
     height: 100%;
     padding: 1rem;
@@ -270,12 +270,14 @@ body {
 .form--group {
     display: flex;
     align-items: center;
-    width: 33rem;
+    width: 100%;
     height: 3.7rem;
     background-color: #F2F6F8;
     padding: 1rem;
     border-radius: .25rem;
     margin-bottom: 1.5rem;
+    margin-right: 3rem;
+    box-sizing: border-box;
 }
 
 .form--icon {
@@ -494,6 +496,9 @@ body {
         margin: 25rem 0 3.5rem 0;
         width: 20rem;
     }
+
+    /* Modal */
+
     
 }
 
