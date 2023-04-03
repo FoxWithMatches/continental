@@ -19,7 +19,6 @@ body {
     line-height: 1.75em;
     padding: 0 6rem 0 6rem;
     margin: 0 auto;
-
 }
 
 /* Header */
@@ -197,6 +196,115 @@ body {
 
 .footer {
     margin: 8.8rem 0 6.25rem 0;
+}
+
+/* Modal */
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: rgba(171, 197, 220, 0.9);
+    overflow: auto;
+}
+
+.modal--show {
+    display: flex;
+}
+
+.modal--dialog {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    margin: auto;
+
+    background-color: #fff;
+    position: relative;
+}
+
+.modal--close {
+    position: absolute;
+    top: .9rem;
+    right: .9rem;
+    z-index: 1;
+
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+
+    padding: 0;
+    background: none;
+    border: 0;
+
+    transition: transform .2s linear;
+}
+
+.modal--close:hover {
+    transform: rotate(90deg);
+}
+
+.modal--content {
+    padding: 3rem;
+}
+
+.modal--title {
+    color: #003E64;
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+.form {
+    padding: 2.5rem 0;
+}
+
+.form--group {
+    display: flex;
+    align-items: center;
+    width: 33rem;
+    height: 3.7rem;
+    background-color: #F2F6F8;
+    padding: 1rem;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+}
+
+.form--icon {
+    width: 1.5rem;
+    margin-right: .6rem;
+}
+
+.input {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #003E64;
+    letter-spacing: 0.02em;
+    background: transparent;
+    border: none;
+}
+
+.form--button {
+    background: #C2D5E6;
+    border-radius: .25rem;
+    border: none;
+    color: #003E64;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: .8rem 4.6rem;
+}
+
+.form--button.red {
+    color: #fff;
+    background-color: #C70048;
 }
 
 /*------------ media -------------*/

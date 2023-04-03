@@ -153,11 +153,53 @@ the charters, we can offer air cargo shipment on per kg basis.
     </div>
 </main>
 
-<!--Footer-->
+    <!--Footer-->
     <div class="container">
         <footer class="footer">
             <p>© Continental Aviation Services LLC, 2023 All Rights Reserved</p>
         </footer>
+    </div>
+
+    <!--Modal-->
+
+    <div class="modal">
+        <div class="modal--dialog">
+            <button class="modal--close" type="button" data-close>
+                <img src="image/cross.png" alt="close modal image">
+            </button>
+
+            <div class="modal--content">
+                <div class="modal--title">Registration</div>
+                <form action="/" class="form" method="post">
+                    <div class="form--group">
+                        <img class="form--icon" src="./image/iconName.png" alt="icon">
+                        <input id="input-name" name="input-name" type="text" class="input" placeholder="Your Name *" required>
+                    </div>
+
+                    <div class="form--group">
+                        <img class="form--icon" src="./image/iconCompany.png" alt="icon">
+                        <input id="input-company" name="input-company" type="text" class="input" placeholder="Company *" required>
+                    </div>
+
+                    <div class="form--group">
+                        <img class="form--icon" src="./image/iconPhone.png" alt="icon">
+                        <input id="input-phone" name="input-phone" type="phone" class="input" placeholder="Phone Number *">
+                    </div>
+
+                    <div class="form--group">
+                        <img class="form--icon" src="./image/iconEmail.png" alt="icon">
+                        <input id="input-email" name="input-email" type="text" class="input" placeholder="Email *">
+                    </div>
+
+                    <div class="form--group">
+                        <img class="form--icon" src="./image/iconWebsite.png" alt="icon">
+                        <input id="input-website" name="input-website" type="text" class="input" placeholder="Website *">
+                    </div>
+
+                    <button class="form--button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
   </body>
 </html>
