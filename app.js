@@ -95,4 +95,66 @@ $("[data-scroll]").on("click", function(event) {
     scrollTop: elementOffset - 70
   }, 700);
 });
+
+//Disabled btn
+
+//rectangle animation
+(function () {
+    let rectangle = document.querySelector('.rectangle');
+    let rectangleGreen = document.querySelector('.rectangle--green');
+    let rectangleBeige = document.querySelector('.rectangle--beige');
+
+  
+    let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+          return;
+        }
+  
+        if (entry.isIntersecting) {
+          entry.target.classList.add('rectangle-animation');
+        }
+      });
+    });
+  
+    observer.observe(rectangle);
+  })();
+
+  (function () {
+    let rectangleGreen = document.querySelector('.rectangle--green');
+    let rectangleBeige = document.querySelector('.rectangle--beige');
+
+  
+    let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+          return;
+        }
+  
+        if (entry.isIntersecting) {
+          entry.target.classList.add('rectangle-animation');
+        }
+      });
+    });
+  
+    observer.observe(rectangleBeige);
+  })();
+
+  (function () {
+    let rectangleGreen = document.querySelector('.rectangle--green');
+
+    let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+          return;
+        }
+  
+        if (entry.isIntersecting) {
+          entry.target.classList.add('rectangle-animation');
+        }
+      });
+    });
+  
+    observer.observe(rectangleGreen);
+  })();
 })

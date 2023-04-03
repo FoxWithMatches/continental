@@ -98,7 +98,11 @@ body {
 
 .clouds-image {
     background: url('./image/clouds.png') no-repeat;
-    height: auto;
+    height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-flex {
@@ -144,6 +148,10 @@ body {
     height: 41rem;
     align-items: center;
 }
+
+.rectangle-animation {
+    animation: wipe-enter 1s 1
+  }
 
 .line {
     content: "";
@@ -595,3 +603,17 @@ body {
         height: 8.9rem;
     }
 }
+
+/* Animation */
+
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, .015)
+    }
+    50% {
+      transform: scale(1, .015)
+    }
+  }
+  .rectangle-animation {
+    animation: wipe-enter 1.3s 1
+  }
